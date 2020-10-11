@@ -17,6 +17,28 @@ int main()
    std::cout << "----------------" << std::endl;
    std::cout << "CharacterVector:" << std::endl;
    std::cout << "----------------" << std::endl;
+   std::cout << "Size: " << cv.size() << std::endl;
+   cv.put('a');
+   cv.put('b');
+   cv.put('c');
+   cv.put('d');
+   std::cout << "Size: " << cv.size() << std::endl;
+   for(int i = 0; i < cv.size(); i++)
+      std::cout << cv.get(i) << std::endl;
+   cv.put('z', 1);
+   std::cout << "After putting z at index 1" << std::endl;
+   for(int i = 0; i < cv.size(); i++)
+      std::cout << cv.get(i) << std::endl;
+   std::cout << "Size: " << cv.size() << std::endl;
+   cv.put('y', 20);
+   std::cout << "After putting y at index 20" << std::endl;
+   for(int i = 0; i < cv.size(); i++)
+      std::cout << cv.get(i) << std::endl;
+   cv.put('x', -1);
+   std::cout << "After putting x at index -1" << std::endl;
+   for(int i = 0; i < cv.size(); i++)
+      std::cout << cv.get(i) << std::endl;
+   //---------------------------------------
 
    //-------------------------------------------------------------------------
 
