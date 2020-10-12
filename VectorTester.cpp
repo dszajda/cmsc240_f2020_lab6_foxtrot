@@ -56,6 +56,32 @@ int main()
    std::cout << "--------------" << std::endl;
    std::cout << "IntegerVector:" << std::endl;
    std::cout << "--------------" << std::endl;
+    std::cout  << "Size: " << iv.size() << std::endl;
+    iv.put(1);
+    iv.put(2);
+    iv.put(3);
+    std::cout << "Size: " << iv.size() << " [3]" << std::endl;
+    
+    std::cout << "Before any changes" << std::endl;
+    for(int i=0; i < iv.size(); i++) {
+        std::cout << iv.get(i) << std::endl;
+    }
+    
+    iv.put(4, 2);
+    std::cout << "After putting 4 at index 2" << std::endl;
+    for(int i=0; i < iv.size(); i++) {
+        std::cout << iv.get(i) << std::endl;
+    }
+    iv.put(5, 10);
+    std::cout << "After putting 5 at index 10" << std::endl;
+    for(int i=0; i < iv.size(); i++) {
+        std::cout << iv.get(i) << std::endl;
+    }
+    iv.put(6, -1);
+    std::cout << "After putting 6 at index -1" << std::endl;
+    for(int i=0; i < iv.size(); i++) {
+        std::cout << iv.get(i) << std::endl;
+    }
 
    //-------------------------------------------------------------------------
 
