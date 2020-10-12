@@ -112,6 +112,13 @@ int main()
    std::cout << "--------------------------" << std::endl;
    std::cout << "appended-to IntegerVector:" << std::endl;
    std::cout << "--------------------------" << std::endl;
+    iv2.appendCharacterVector(cv);
+    std::cout << "After appending cv" << std::endl;
+    for(int i=0; i < iv2.size(); i++) {
+        std::cout << iv2.get(i) << std::endl;
+    }
+    
+    
 
    //-------------------------------------------------------------------------
 
