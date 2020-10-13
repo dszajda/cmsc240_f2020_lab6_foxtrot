@@ -153,7 +153,7 @@ int main()
        std::cout << iv2.get(i) << std::endl;
     }
        
-   iv2.append(dv);
+   iv2.appendDoubleVector(dv);
    std::cout << "After apending dv" << std::endl;
    for(int i=0; i < iv2.size(); i++) {
        std::cout << iv2.get(i) << std::endl;
@@ -163,3 +163,4 @@ int main()
 
    return 0;
 }
+
