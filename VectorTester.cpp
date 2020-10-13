@@ -83,6 +83,7 @@ int main()
    std::cout << "--------------" << std::endl;
    std::cout << "IntegerVector:" << std::endl;
    std::cout << "--------------" << std::endl;
+
    std::cout  << "Size: " << iv.size() << std::endl;
    iv.put(65);
    iv.put(66);
@@ -98,7 +99,7 @@ int main()
    std::cout << "After putting 68 at index 2" << std::endl;
    for(int i=0; i < iv.size(); i++) {
        std::cout << iv.get(i) << std::endl;
-    }
+
    iv.put(69, 10);
    std::cout << "After putting 69 at index 10" << std::endl;
    for(int i=0; i < iv.size(); i++) {
@@ -151,13 +152,12 @@ int main()
    for(int i=0; i < iv2.size(); i++) {
        std::cout << iv2.get(i) << std::endl;
     }
+       
    iv2.append(dv);
    std::cout << "After apending dv" << std::endl;
    for(int i=0; i < iv2.size(); i++) {
        std::cout << iv2.get(i) << std::endl;
     }
-
-
 
    //-------------------------------------------------------------------------
 
