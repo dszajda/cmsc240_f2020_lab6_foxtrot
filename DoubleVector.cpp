@@ -24,11 +24,11 @@ double DoubleVector::get(int index)
 // otherwise, use push_back to append to the end of the vector
 void DoubleVector::put(double value, int index)
 {
-  if(index < 0 || index >= doubleVector.size()){
+  if(index < 0 || (unsigned)index >= doubleVector.size()){
     doubleVector.push_back(value);
   }else{
-    std::vector<int>::iterator it = doubleVector.begin();
-    doubleVector.insert(it + index, value)
+    std::vector<double>::iterator it = doubleVector.begin();
+    doubleVector.insert(it + index, value);
   }
 }
 
@@ -42,7 +42,7 @@ void DoubleVector::put(double value){
 void DoubleVector::appendCharacterVector(CharacterVector& characterVector)
 {
   for(int i=0; i < characterVector.size(); i++) {
-       DoubleVector.push_back(static_cast<int>(characterVector.get(i)));
+       doubleVector.push_back(static_cast<int>(characterVector.get(i)));
    }
 }
 
@@ -50,10 +50,9 @@ void DoubleVector::appendCharacterVector(CharacterVector& characterVector)
 // double to doubleVector
 void DoubleVector::appendIntegerVector(IntegerVector& integerVector)
 {
-  for(int i=0; i < IntegerVector.size(); i++) {
-       DoubleVector.push_back(static_cast<int>(IntegerVector.get(i)));
+  for(int i=0; i < integerVector.size(); i++) {
+       doubleVector.push_back(static_cast<int>(integerVector.get(i)));
    }
 }
 
 #endif
-
