@@ -92,6 +92,9 @@ int main()
    std::cout << "----------------------------" << std::endl;
    std::cout << "appended-to CharacterVector:" << std::endl;
    std::cout << "----------------------------" << std::endl;
+   cv2.appendIntegerVector(iv);
+   for(int i = 0; i < cv2.size(); i++)
+      std::cout << cv2.get(i) << std::endl;
 
    //-------------------------------------------------------------------------
 
