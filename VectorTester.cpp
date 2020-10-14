@@ -50,9 +50,9 @@ int main()
    std::cout << "-------------" << std::endl;
 
    std::cout  << "Size: " << dv.size() << std::endl;
-   dv.put(12.1);
-   dv.put(13.1);
-   dv.put(14.1);
+   dv.put(31.1);
+   dv.put(33.1);
+   dv.put(34.1);
    std::cout << "Size: " << dv.size() << " [3]" << std::endl;
 
    std::cout << "Before any changes" << std::endl;
@@ -60,18 +60,18 @@ int main()
        std::cout << dv.get(i) << std::endl;
    }
 
-   dv.put(13.5, 1);
-   std::cout << "After putting 13.5 at index 1" << std::endl;
+   dv.put(38.5, 1);
+   std::cout << "After putting 38.5 at index 1" << std::endl;
    for(int i=0; i < dv.size(); i++) {
        std::cout << dv.get(i) << std::endl;
    }
-   dv.put(18.5, 5);
-   std::cout << "After putting 18.5 at index 5" << std::endl;
+   dv.put(36.5, 5);
+   std::cout << "After putting 36.5 at index 5" << std::endl;
    for(int i=0; i < dv.size(); i++) {
        std::cout << dv.get(i) << std::endl;
    }
-   dv.put(12.5, -1);
-   std::cout << "After putting 12.5 at index -1" << std::endl;
+   dv.put(30.5, -1);
+   std::cout << "After putting 30.5 at index -1" << std::endl;
    for(int i=0; i < dv.size(); i++) {
        std::cout << dv.get(i) << std::endl;
    }
@@ -139,9 +139,16 @@ int main()
    std::cout << "appended-to DoubleVector:" << std::endl;
    std::cout << "-------------------------" << std::endl;
 
+   std::cout << "After appending iv" << std::endl;
    dv2.appendIntegerVector(iv);
    for(int i = 0; i < dv2.size(); i++)
       std::cout << dv2.get(i) << std::endl;
+   
+   std::cout << "After appending cv" << std::endl;
+   dv2.appendCharacterVector(cv);
+   for(int i=0; i < dv2.size(); i++) {
+       std::cout << dv2.get(i) << std::endl;
+    }
 
    //-------------------------------------------------------------------------
 
