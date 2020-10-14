@@ -99,12 +99,12 @@ int main()
    std::cout << "After putting 68 at index 2" << std::endl;
    for(int i=0; i < iv.size(); i++) {
        std::cout << iv.get(i) << std::endl;
-
+   }
    iv.put(69, 10);
    std::cout << "After putting 69 at index 10" << std::endl;
    for(int i=0; i < iv.size(); i++) {
        std::cout << iv.get(i) << std::endl;
-    }
+   }
    iv.put(70, -1);
    std::cout << "After putting 70 at index -1" << std::endl;
    for(int i=0; i < iv.size(); i++) {

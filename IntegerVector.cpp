@@ -24,7 +24,7 @@ int IntegerVector::get(int index)
 // otherwise, use push_back to append to the end of the vector
 void IntegerVector::put(int value, int index)
 {
-    if (index < 0 || index >= integerVector.size()) {
+    if (index < 0 || (unsigned)index >= integerVector.size()) {
         integerVector.push_back(value);
     }
     else {
