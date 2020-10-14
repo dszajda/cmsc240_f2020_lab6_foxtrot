@@ -22,7 +22,7 @@ int main()
    cv.put('b');
    cv.put('c');
    cv.put('d');
-   std::cout << "Size: " << cv.size() << std::endl;
+   std::cout << "Size: " << cv.size() << " [4]" << std::endl;
    for(int i = 0; i < cv.size(); i++)
       std::cout << cv.get(i) << std::endl;
    cv.put('z', 1);
@@ -50,7 +50,7 @@ int main()
    std::cout << "-------------" << std::endl;
 
    std::cout  << "Size: " << dv.size() << std::endl;
-   dv.put(31.1);
+   dv.put(48.1);
    dv.put(33.1);
    dv.put(34.1);
    std::cout << "Size: " << dv.size() << " [3]" << std::endl;
@@ -70,8 +70,8 @@ int main()
    for(int i=0; i < dv.size(); i++) {
        std::cout << dv.get(i) << std::endl;
    }
-   dv.put(30.5, -1);
-   std::cout << "After putting 30.5 at index -1" << std::endl;
+   dv.put(50.5, -1);
+   std::cout << "After putting 50.5 at index -1" << std::endl;
    for(int i=0; i < dv.size(); i++) {
        std::cout << dv.get(i) << std::endl;
    }

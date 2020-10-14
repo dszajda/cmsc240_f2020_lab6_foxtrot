@@ -42,7 +42,7 @@ void DoubleVector::put(double value){
 void DoubleVector::appendCharacterVector(CharacterVector& characterVector)
 {
   for(int i=0; i < characterVector.size(); i++) {
-       doubleVector.push_back(static_cast<int>(characterVector.get(i)));
+       doubleVector.push_back(static_cast<double>(characterVector.get(i)));
    }
 }
 
@@ -51,7 +51,7 @@ void DoubleVector::appendCharacterVector(CharacterVector& characterVector)
 void DoubleVector::appendIntegerVector(IntegerVector& integerVector)
 {
   for(int i=0; i < integerVector.size(); i++) {
-       doubleVector.push_back(static_cast<int>(integerVector.get(i)));
+       doubleVector.push_back(static_cast<double>(integerVector.get(i)));
    }
 }
 
